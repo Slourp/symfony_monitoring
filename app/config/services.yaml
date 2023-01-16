@@ -35,7 +35,7 @@ services:
     namespace: 'App\Infrastructure\'
 
   App\Infrastructure\Web\Controller\:
-    resource: "../src/Infrastructure/Web/Controller"
+    resource: "../src/Infrastructure/Web/Controller/*"
     public: true
 
   App\Infrastructure\Web\Command\:

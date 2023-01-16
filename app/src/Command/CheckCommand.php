@@ -1,7 +1,6 @@
 <?php
 
-namespace App\Infrastructure\Web\Command;
-
+namespace App\Command;
 
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -21,7 +20,8 @@ class CheckCommand extends Command
     {
         $this
             ->addArgument('arg1', InputArgument::OPTIONAL, 'Argument description')
-            ->addOption('option1', null, InputOption::VALUE_NONE, 'Option description');
+            ->addOption('option1', null, InputOption::VALUE_NONE, 'Option description')
+        ;
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
